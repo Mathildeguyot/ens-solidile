@@ -1,0 +1,46 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+
+  <div class="left">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <div class="logo">
+        <h1>Solid'île</h1>
+      </div>
+    <% end %>
+  </div>
+
+
+
+  <div class="right">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <ul class="navbar-nav mr-auto">
+      <div class="general">
+        <li class="nav-item active">
+          <%= link_to "Tous les commerçants", commerces_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Produits locaux", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Décoration", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Gastronomie", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Mode", "#", class: "nav-link" %>
+        </li>
+         <li class="nav-item active">
+          <%= link_to "Enfants", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Papeterie", "#", class: "nav-link" %>
+        </li>
+
+      </div>
+    </ul>
+  </div>
+</div>

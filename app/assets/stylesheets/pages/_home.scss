@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+.content-wrapper {
+  margin: 40px;
+}
+
+.banner {
+  display: flex;
+  .left-banner {
+    background-color: #3d405b;
+    color: white;
+    padding: 87px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    .text-content {
+      padding: 22px;
+      border: 5px solid #e07a5f;
+    }
+  }
+  img {
+    width: 60%;
+  }
+}

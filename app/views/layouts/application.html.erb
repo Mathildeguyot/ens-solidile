@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EnsSolidile</title>
+    <title>Solidile</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,6 +12,14 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <%= render 'shared/navbar' %>
+
+    <div class="content-wrapper" style="min-height: calc(100vh - 68px - 100px)">
+      <%= yield %>
+    </div>
+
+    <%= render 'shared/footer' %>
+
   </body>
 </html>

@@ -1,0 +1,18 @@
+<h1 style="font-weight: 800">Tous les commerces</h1>
+<div class="centering">
+  <div class="shop-grid">
+    <% @commerces.each do |commerce| %>
+      <div class="shop-card">
+        <div class="top-card">
+          <p class="name"><%= commerce.name %></p>
+          <p class="tag"><%= commerce.tag %></p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+        <p class="description"><%= commerce.description %></p>
+        <div class="centering">
+          <a class="site-button" href="#">Vers le site</a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
