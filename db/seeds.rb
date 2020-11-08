@@ -10,19 +10,19 @@ Owner.destroy_all
 
 
 owner1 = Owner.new(
-  pseudo: "Mathilde Guyot",
-  description: "Mathilde vient de lancer sa marque de vêtements cousus mains après avoir fait une école de commerce."
+  pseudo: "Martine Lalouse",
+  description: ""
 )
 owner1.save
 
 commerce1 = Commerce.new(
-  name: "Margot & Cie",
-  description: "Situé à Palais, je vends toutes sortes d'objets de décoration. Idéal pour faire vos cadeaux de Noël !!!",
+  name: "Margot et Compagnie",
+  description: "Boutique crée en 2012, ouverte à l'année, et spécialisée en Arts de la Table, décoration, linge de maison, cadeaux et souvenirs.",
   tag: "décoration",
-  tel: "0625435678",
-  mail: "choubidou@gmail.com",
-  address: "9 rue Joseph Le Brix, 56360 Le Palais",
-  website: "solidile.fr",
+  tel: "06.08.36.88.79",
+  mail: "lalouse.martine@orange.fr",
+  address: "9 rue de l'Eglise, 56360 Le Palais",
+  website: "https://www.facebook.com/pages/category/Gift-Shop/Margot-et-Compagnie-Belle-Ile-en-mer-923988161000459/",
   payment: "click & collect",
   owner: owner1
 )
@@ -30,20 +30,19 @@ commerce1.save
 
 
 owner2 = Owner.new(
-  pseudo: "Mathilde Guyot",
-  description: "Mathilde vient de lancer sa marque de vêtements cousus mains après avoir fait une école de commerce."
+  pseudo: "Marylin Goslis",
+  description: ""
 )
 owner2.save
 
 commerce2 = Commerce.new(
-  name: "Margot & Cie",
-  description: "Situé à Palais, je vends toutes sortes d'objets de décoration. Idéal pour faire vos cadeaux de Noël !!!",
-  tag: "décoration",
-  tel: "0625435678",
-  mail: "choubidou@gmail.com",
-  address: "9 rue Joseph Le Brix, 56360 Le Palais",
-  website: "solidile.fr",
-  payment: "click & collect",
+  name: "Hair Funny",
+  description: "Salon de coiffure, vente de produits cosmétiques et esthétiques.",
+  tag: "beauté",
+  tel: "06.72.41.88.87",
+  mail: "ludovicgoslis@yahoo.fr",
+  address: "16 Quai Jacques Leblanc, 56360 Le Palais",
+  payment: "click & collect (espèces / chèques)",
   owner: owner2
 )
 commerce2.save
@@ -51,20 +50,20 @@ commerce2.save
 
 
 owner3 = Owner.new(
-  pseudo: "Mathilde Guyot",
-  description: "Mathilde vient de lancer sa marque de vêtements cousus mains après avoir fait une école de commerce."
+  pseudo: "Véronique Lambotin",
+  description: ""
 )
 owner3.save
 
 commerce3 = Commerce.new(
-  name: "Margot & Cie",
-  description: "Situé à Palais, je vends toutes sortes d'objets de décoration. Idéal pour faire vos cadeaux de Noël !!!",
+  name: "Rêveries d'Île",
+  description: "Fusion et thermoformage du verre plat. Je propose mes créations en verre dans le domaine de l'art de la table, de la décoration.",
   tag: "décoration",
-  tel: "0625435678",
-  mail: "choubidou@gmail.com",
+  tel: "06.86.73.84.04",
+  mail: "reveriesdile@gmail.com",
   address: "9 rue Joseph Le Brix, 56360 Le Palais",
-  website: "solidile.fr",
-  payment: "click & collect",
+  website: "https://www.facebook.com/R%C3%AAveries-dIle-V%C3%A9ronique-Lambotin-Artisanat-du-verre-1393631734107274/",
+  payment: "click & collect (espèces / carte / chèques)",
   owner: owner3
 )
 commerce3.save

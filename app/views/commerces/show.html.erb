@@ -1,3 +1,40 @@
 <h1><%= @commerce.name %></h1>
-<p><%= @commerce.tag %></p>
-<p><%= @commerce.description %></p>
+<p><%= @commerce.address %></p>
+
+
+<div class="big-shop-card d-flex">
+  <img id="shop-pic" src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+
+  <div class="right-card">
+
+    <p class="tag"><%= @commerce.tag %></p>
+    <p><%= @commerce.description %></p>
+
+    <div class="top-border">
+      <h3>PAIEMENT</h3>
+      <p><%= @commerce.payment %></p>
+    </div>
+
+    <div class="top-border">
+      <h3>PROPRIÉTAIRE</h3>
+      <div class="d-flex">
+        <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80" alt="">
+        <div class="owner-infos">
+          <p><%= @commerce.owner.pseudo %></p>
+          <p><%= @commerce.owner.description %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-border">
+      <h3>CONTACT</h3>
+      <p>tél : <%= @commerce.tel %></p>
+      <p>e-mail : <%= @commerce.mail %></p>
+    </div>
+
+  </div>
+</div>
+
+<div class="centering">
+  <a class="site-button big" href=<%= @commerce.website %>>Vers le site</a>
+</div>

@@ -10,7 +10,7 @@
         <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
         <p class="description"><%= commerce.description %></p>
         <div class="centering">
-          <a class="site-button" href="#">Vers le site</a>
+          <%= link_to "Voir les détails", commerce_path(commerce), class: "site-button" %>
         </div>
       </div>
     <% end %>
