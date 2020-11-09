@@ -7,7 +7,7 @@
           <p class="name"><%= commerce.name %></p>
           <p class="tag"><%= commerce.tag %></p>
         </div>
-        <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+        <%= cl_image_tag commerce.photo.key %>
         <p class="description"><%= commerce.description %></p>
         <div class="centering">
           <%= link_to "Voir les détails", commerce_path(commerce), class: "site-button" %>

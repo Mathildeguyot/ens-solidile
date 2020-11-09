@@ -5,9 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "open-uri"
+
+
 Commerce.destroy_all
 Owner.destroy_all
 
+
+#MARGOT ET COMPAGNIE
 
 owner1 = Owner.new(
   pseudo: "Martine Lalouse",
@@ -27,7 +33,10 @@ commerce1 = Commerce.new(
   owner: owner1
 )
 commerce1.save
+commerce1.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1604856967/margotetcompagnie_x5ou5x.jpg"), filename: "margotetcompagnie_x5ou5x.jpg")
 
+
+#HAIR FUNNY
 
 owner2 = Owner.new(
   pseudo: "Marylin Goslis",
@@ -46,8 +55,11 @@ commerce2 = Commerce.new(
   owner: owner2
 )
 commerce2.save
+commerce2.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1604914947/mike-petrucci-c9FQyqIECds-unsplash_vsyfk8.jpg"), filename: "mike-petrucci-c9FQyqIECds-unsplash_vsyfk8.jpg")
 
 
+
+#REVERIES D'ILE
 
 owner3 = Owner.new(
   pseudo: "Véronique Lambotin",
@@ -67,3 +79,52 @@ commerce3 = Commerce.new(
   owner: owner3
 )
 commerce3.save
+commerce3.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1604856949/reveriesdile_cwginn.jpg"), filename: "reveriesdile_cwginn.jpg")
+
+
+#POTERYVES
+
+owner4 = Owner.new(
+  pseudo: "Yves Bernard-Bonabesse",
+  description: ""
+)
+owner4.save
+
+commerce4 = Commerce.new(
+  name: "Potr'Yves Parlevent",
+  description: "Poteries Céramiques fait main, pièces uniques. Utilitaires ou déco, crèches et décoration de Noël. Possibilités de commandes. Mon atelier à Parlevent - Bangor est ouvert toute l'année sur rendez-vous au 06 35 91 62 86 ou potryves@gmail.com.",
+  tag: "artisanat",
+  tel: "06.35.91.62.86",
+  mail: "potryves@gmail.com",
+  address: "Parlevent, 56360 Bangor",
+  website: "https://www.potryves-parlevent.fr/",
+  payment: "click & collect (espèces / carte / chèques)",
+  owner: owner4
+)
+commerce4.save
+commerce4.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1604918382/potryves_qm9mb0.jpg"), filename: "potryves_qm9mb0")
+
+
+#SHOPBURO
+
+owner5 = Owner.new(
+  pseudo: "Patrick Montagner",
+  description: ""
+)
+owner5.save
+
+commerce5 = Commerce.new(
+  name: "Shopburo",
+  description: "Vente de fournitures de bureau, scolaires, accessoires informatiques, de créativité .
+Service de bureautique : photocopie du A3 au A6, copie, scan, impression photo, reliure, destructions documents, plastifications A4 au A6.
+Personnalisation sur support : tee-shirt, mug, porte clé, set de table, pochette, pulzze",
+  tag: "papeterie",
+  tel: "02.97.31.99.15",
+  mail: "buroplus@wanadoo.fr",
+  address: "Rue Vauban 56360 Locmaria",
+  website: "https://www.facebook.com/shopburo.fr",
+  payment: "click & collect (espèces / carte / chèques)",
+  owner: owner5
+)
+commerce5.save
+commerce5.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1604919387/shopburo_o56udi.jpg"), filename: "shopburo_o56udi")
