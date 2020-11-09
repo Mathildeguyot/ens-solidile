@@ -5,7 +5,9 @@
       <div class="shop-card">
         <div class="top-card">
           <p class="name"><%= commerce.name %></p>
-          <p class="tag"><%= commerce.tag %></p>
+          <% commerce.tag.split(",").each do |x| %>
+            <p class="tag"><%= x %></p>
+          <% end %>
         </div>
         <%= cl_image_tag commerce.photo.key %>
         <p class="description"><%= commerce.description %></p>

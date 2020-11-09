@@ -96,7 +96,7 @@ owner4.save
 commerce4 = Commerce.new(
   name: "Potr'Yves Parlevent",
   description: "Poteries Céramiques fait main, pièces uniques. Utilitaires ou déco, crèches et décoration de Noël. Possibilités de commandes. Mon atelier à Parlevent - Bangor est ouvert toute l'année sur rendez-vous au 06 35 91 62 86 ou potryves@gmail.com.",
-  tag: "artisanat",
+  tag: "artisanat,décoration",
   tel: "06.35.91.62.86",
   mail: "potryves@gmail.com",
   address: "Parlevent, 56360 Bangor",
