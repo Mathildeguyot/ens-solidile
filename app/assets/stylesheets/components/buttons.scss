@@ -8,11 +8,18 @@
   border-radius: 20px;
   font-family: 'Cabin Sketch';
   font-size: 20px;
+  opacity: 0.8;
+  &:hover {
+    text-decoration: none;
+    opacity: 1;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .big {
   font-size: 40px;
-  margin-top: 80px;
+  margin-top: 50px;
   border-radius: 35px;
   padding: 0px 16px;
 }

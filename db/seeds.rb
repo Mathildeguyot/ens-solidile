@@ -23,13 +23,14 @@ owner1.save
 
 commerce1 = Commerce.new(
   name: "Margot et Compagnie",
-  description: "Boutique crée en 2012, ouverte à l'année, et spécialisée en Arts de la Table, décoration, linge de maison, cadeaux et souvenirs.",
+  description: "Boutique créée en 2012, ouverte à l'année, et spécialisée en Arts de la Table, décoration, linge de maison, cadeaux et souvenirs.",
   tag: "décoration",
   tel: "06.08.36.88.79",
   mail: "lalouse.martine@orange.fr",
   address: "9 rue de l'Eglise, 56360 Le Palais",
   website: "https://www.facebook.com/pages/category/Gift-Shop/Margot-et-Compagnie-Belle-Ile-en-mer-923988161000459/",
   payment: "click & collect",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner1
 )
 commerce1.save
@@ -52,10 +53,11 @@ commerce2 = Commerce.new(
   mail: "ludovicgoslis@yahoo.fr",
   address: "16 Quai Jacques Leblanc, 56360 Le Palais",
   payment: "click & collect (espèces / chèques)",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner2
 )
 commerce2.save
-commerce2.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1604914947/mike-petrucci-c9FQyqIECds-unsplash_vsyfk8.jpg"), filename: "mike-petrucci-c9FQyqIECds-unsplash_vsyfk8.jpg")
+commerce2.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1604932910/hairfunny_rzo8uw.png"), filename: "hairfunny_rzo8uw.png")
 
 
 
@@ -76,6 +78,7 @@ commerce3 = Commerce.new(
   address: "9 rue Joseph Le Brix, 56360 Le Palais",
   website: "https://www.facebook.com/R%C3%AAveries-dIle-V%C3%A9ronique-Lambotin-Artisanat-du-verre-1393631734107274/",
   payment: "click & collect (espèces / carte / chèques)",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner3
 )
 commerce3.save
@@ -99,6 +102,7 @@ commerce4 = Commerce.new(
   address: "Parlevent, 56360 Bangor",
   website: "https://www.potryves-parlevent.fr/",
   payment: "click & collect (espèces / carte / chèques)",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner4
 )
 commerce4.save
@@ -124,6 +128,7 @@ Personnalisation sur support : tee-shirt, mug, porte clé, set de table, pochett
   address: "Rue Vauban 56360 Locmaria",
   website: "https://www.facebook.com/shopburo.fr",
   payment: "click & collect (espèces / carte / chèques)",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner5
 )
 commerce5.save

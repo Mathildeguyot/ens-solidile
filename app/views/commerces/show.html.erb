@@ -1,5 +1,18 @@
-<h1><%= @commerce.name %></h1>
-<p><%= @commerce.address %></p>
+<div class="shop-infos">
+  <div>
+    <h1><%= @commerce.name %></h1>
+    <p><%= @commerce.address %></p>
+  </div>
+  <div class="d-flex justify-content-space">
+    <div class="owner-infos">
+      <h3>PROPRIÉTAIRE</h3>
+      <p><%= @commerce.owner.pseudo %></p>
+      <!-- <p><%= @commerce.owner.description %></p> -->
+    </div>
+    <img class="avatar" src="https://oasys.ch/wp-content/uploads/2019/03/photo-avatar-profil.png" alt="">
+  </div>
+</div>
+
 
 
 <div class="big-shop-card d-flex">
@@ -12,30 +25,22 @@
     <p><%= @commerce.description %></p>
 
     <div class="top-border">
-      <h3>PAIEMENT</h3>
-      <p><%= @commerce.payment %></p>
+      <h3>SOUTENIR LA BOUTIQUE</h3>
+      <p><%= @commerce.support %></p>
+      <br>
+      <p>Paiement : <%= @commerce.payment %></p>
     </div>
 
-    <div class="top-border">
-      <h3>PROPRIÉTAIRE</h3>
-      <div class="d-flex">
-        <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80" alt="">
-        <div class="owner-infos">
-          <p><%= @commerce.owner.pseudo %></p>
-          <p><%= @commerce.owner.description %></p>
-        </div>
-      </div>
-    </div>
 
     <div class="top-border">
       <h3>CONTACT</h3>
-      <p>tél : <%= @commerce.tel %></p>
-      <p>e-mail : <%= @commerce.mail %></p>
+      <p><i class="fas fa-phone-alt"></i>  <%= @commerce.tel %></p>
+      <p><i class="fas fa-envelope"></i>  <%= @commerce.mail %></p>
     </div>
 
   </div>
 </div>
 
 <div class="centering">
-  <a class="site-button big" href=<%= @commerce.website %>>Vers le site</a>
+  <a class="site-button big" target="_blank" href=<%= @commerce.website %>>Vers le site</a>
 </div>
