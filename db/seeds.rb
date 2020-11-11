@@ -8,10 +8,10 @@
 
 require "open-uri"
 
-
+Product.destroy_all
 Commerce.destroy_all
 Owner.destroy_all
-Product.destroy_all
+
 
 
 #MARGOT ET COMPAGNIE
