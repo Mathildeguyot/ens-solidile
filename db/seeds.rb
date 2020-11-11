@@ -321,3 +321,75 @@ commerce10 = Commerce.new(
 )
 commerce10.save
 commerce10.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605092366/atelier13m2_avoyyi.png"), filename: "atelier13m2_avoyyi")
+
+
+
+#ATELIER 13M2
+
+owner11 = Owner.new(
+  pseudo: "Morgane Lenglart",
+  description: ""
+)
+owner11.save
+
+commerce11 = Commerce.new(
+  name: "Atelier 13m2",
+  description: "Création d'objets de décoration, sculptures, luminaires",
+  tag: "artisant,produits locaux,décoration",
+  tel: "06.66.43.10.59",
+  mail: "lenglart.morgane@gmail.com",
+  address: "Bordustard, 56360 Le Palais",
+  website: "https://www.facebook.com/atelier13m2",
+  payment: "click & collect (espèces / chèque)",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  owner: owner11
+)
+commerce11.save
+commerce11.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605092366/atelier13m2_avoyyi.png"), filename: "atelier13m2_avoyyi")
+
+
+#ATELIER 13M2
+
+owner12 = Owner.new(
+  pseudo: "Morgane Lenglart",
+  description: ""
+)
+owner12.save
+
+commerce12 = Commerce.new(
+  name: "Atelier 13m2",
+  description: "Création d'objets de décoration, sculptures, luminaires",
+  tag: "artisant,produits locaux,décoration",
+  tel: "06.66.43.10.59",
+  mail: "lenglart.morgane@gmail.com",
+  address: "Bordustard, 56360 Le Palais",
+  website: "https://www.facebook.com/atelier13m2",
+  payment: "click & collect (espèces / chèque)",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  owner: owner12
+)
+commerce12.save
+commerce12.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605092366/atelier13m2_avoyyi.png"), filename: "atelier13m2_avoyyi")
+
+#ATELIER 13M2
+
+owner13 = Owner.new(
+  pseudo: "Morgane Lenglart",
+  description: ""
+)
+owner13.save
+
+commerce13 = Commerce.new(
+  name: "Atelier 13m2",
+  description: "Création d'objets de décoration, sculptures, luminaires",
+  tag: "artisant,produits locaux,décoration",
+  tel: "06.66.43.10.59",
+  mail: "lenglart.morgane@gmail.com",
+  address: "Bordustard, 56360 Le Palais",
+  website: "https://www.facebook.com/atelier13m2",
+  payment: "click & collect (espèces / chèque)",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  owner: owner13
+)
+commerce13.save
+commerce13.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605092366/atelier13m2_avoyyi.png"), filename: "atelier13m2_avoyyi")
