@@ -48,9 +48,9 @@
 
 .navbar-light .navbar-nav .active > .nav-link {
   color: white;
-  margin: 0px 10px;
-  &:hover {
-    font-weight: 700;
+  margin: 0px 4px;
+  p {
+    font-size: 15px;
   }
 }
 
@@ -58,7 +58,6 @@
     color: white;
     &:hover {
       color: white;
-      font-weight: 700;
     }
 }
 
@@ -74,7 +73,8 @@ display:flex;
 .general {
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  padding-top: 40px;
 }
 
 body {
@@ -96,3 +96,77 @@ body {
     margin: 0px 12px;
   }
 }
+
+
+.example {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 0 45px;
+    .hover {
+      font-size: 16px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0px;
+      // transition: $animate;
+      position: relative;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 0px;
+        height: 2px;
+        margin: 5px 0 0;
+        // transition: $animate;
+        transition-duration: 0.75s;
+        opacity: 0;
+        background-color: darken($orange,5%);
+      }
+      &.hover-1 {
+        &:before,
+        &:after {
+          left: 0;
+        }
+      }
+      &.hover-2 {
+        &:before,
+        &:after {
+          right: 0;
+        }
+      }
+      &.hover-3 {
+        &:before {
+          left: 50%;
+        }
+        &:after {
+          right: 50%;
+        }
+      }
+      &.hover-4 {
+        &:before {
+          left: 0;
+        }
+        &:after {
+          right: 0;
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .hover {
+        &:before,
+        &:after {
+          width: 100%;
+          opacity: 1;
+        }
+        &.hover-3,
+        &.hover-4 {
+          &:before,
+          &:after {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }

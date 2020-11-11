@@ -324,72 +324,72 @@ commerce10.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image
 
 
 
-#ATELIER 13M2
+#LA MAIN A LA PAT
 
 owner11 = Owner.new(
-  pseudo: "Morgane Lenglart",
+  pseudo: "Noémie Soulier",
   description: ""
 )
 owner11.save
 
 commerce11 = Commerce.new(
-  name: "Atelier 13m2",
-  description: "Création d'objets de décoration, sculptures, luminaires",
-  tag: "artisant,produits locaux,décoration",
-  tel: "06.66.43.10.59",
-  mail: "lenglart.morgane@gmail.com",
-  address: "Bordustard, 56360 Le Palais",
-  website: "https://www.facebook.com/atelier13m2",
+  name: "La Main à la Pat'",
+  description: "Crêperie de caractère(s) à Belle-île-en-mer. Nous utilisons exclusivement des produits frais et de saison, un maximum de produits locaux (légumes, lait, fromages, glaces, thés et tisanes, saumon, chocolat, apéritifs, vins, charcuterie), et ce toute l’année.",
+  tag: "gastronomie",
+  tel: "06.85.07.59.23",
+  mail: "lamainalapat@hotmail.fr",
+  address: "1 rue de l'Église, 56360 Le Palais",
+  website: "https://www.facebook.com/lamainalapat",
   payment: "click & collect (espèces / chèque)",
-  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  support: "Vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner11
 )
 commerce11.save
-commerce11.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605092366/atelier13m2_avoyyi.png"), filename: "atelier13m2_avoyyi")
+commerce11.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605120090/lamainalapat_zcoqvh.jpg"), filename: "lamainalapat_zcoqvh")
 
 
-#ATELIER 13M2
+#SPAR
 
 owner12 = Owner.new(
-  pseudo: "Morgane Lenglart",
+  pseudo: "Valérie Fortin",
   description: ""
 )
 owner12.save
 
 commerce12 = Commerce.new(
-  name: "Atelier 13m2",
-  description: "Création d'objets de décoration, sculptures, luminaires",
-  tag: "artisant,produits locaux,décoration",
-  tel: "06.66.43.10.59",
-  mail: "lenglart.morgane@gmail.com",
-  address: "Bordustard, 56360 Le Palais",
-  website: "https://www.facebook.com/atelier13m2",
+  name: "SPAR",
+  description: "Commerce, alimentation générale.",
+  tag: "gastronomie",
+  tel: "02.97.31.74.39",
+  mail: "spar.locmaria.56@orange.fr",
+  address: "56360 Locmaria",
+  website: "https://www.spar.fr/",
   payment: "click & collect (espèces / chèque)",
-  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  support: "",
   owner: owner12
 )
 commerce12.save
-commerce12.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605092366/atelier13m2_avoyyi.png"), filename: "atelier13m2_avoyyi")
+commerce12.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605120462/spar_xmo489.jpg"), filename: "spar_xmo489")
 
-#ATELIER 13M2
+#AMARENTE
 
 owner13 = Owner.new(
-  pseudo: "Morgane Lenglart",
+  pseudo: "Muriel Lorec",
   description: ""
 )
 owner13.save
 
 commerce13 = Commerce.new(
-  name: "Atelier 13m2",
-  description: "Création d'objets de décoration, sculptures, luminaires",
+  name: "Amarente",
+  description: "Soins de beauté visage et corps (épilations, soins visage, beauté du regard, beauté des mains et pieds, conseils beauté...) massages bien-être et énergétiques. Je vous reçois à mon domicile. Cartes cadeaux en ligne et/ou livraison cartes 'carton' en livraison durant la fermeture administrative.",
   tag: "artisant,produits locaux,décoration",
-  tel: "06.66.43.10.59",
-  mail: "lenglart.morgane@gmail.com",
-  address: "Bordustard, 56360 Le Palais",
-  website: "https://www.facebook.com/atelier13m2",
-  payment: "click & collect (espèces / chèque)",
-  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  tel: "06.74.75.72.83",
+  mail: "muriel.lorec@orange.fr",
+  address: "19 Quai Gambetta - étage 1, 56360 Le Palais",
+  website: "https://app.flexybeauty.com/amarante/home",
+  payment: "Sur place (espèces / chèque) - e-shop",
+  support: "Vous pouvez vous rendre sur le site de la boutique ou contacter le gérant pour faire une commande.",
   owner: owner13
 )
 commerce13.save
-commerce13.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605092366/atelier13m2_avoyyi.png"), filename: "atelier13m2_avoyyi")
+commerce13.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605120874/amarente_wzhq2i.jpg"), filename: "amarente_wzhq2i")

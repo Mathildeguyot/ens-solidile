@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       get :sport
       get :mode
       get :enfance
+      get :gastronomie
     end
   end
 

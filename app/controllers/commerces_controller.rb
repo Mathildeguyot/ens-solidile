@@ -12,6 +12,10 @@ class CommercesController < ApplicationController
     redirect_to dashboard_path
   end
 
+  def gastronomie
+    @commerces = Commerce.where("tag LIKE '%#{'gastronomie'}%'")
+  end
+
   def sport
     @commerces = Commerce.where("tag LIKE '%#{'sport'}%'")
   end
