@@ -1,66 +1,126 @@
- .shop-card {
-   width: 400px;
-   padding: 20px;
-   box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.1);
-   margin: 15px;
-   img {
-     width: 360px;
-   }
-   .description {
-     margin-top: 10px;
-   }
-   .name {
-     font-size: 20px;
-     font-family: 'Cabin Sketch';
-   }
-   .top-card {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-   }
-   .tag {
-     background-color: #81b29a;
-     border-radius: 20px;
-     padding: 4px 10px;
-     font-size: 14px;
-     color: white;
-   }
-
-
+.shop-card {
+ width: 400px;
+ padding: 20px;
+ box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.1);
+ margin: 15px;
+ border-radius: 4px;
+ img {
+   width: 360px;
+   height: 340px;
+   object-fit: cover;
+ }
+ .description {
+   margin-top: 10px;
+ }
+ .name {
+   font-size: 20px;
+   font-family: 'Cabin Sketch';
+   margin-bottom: 6px;
+ }
+ .top-card {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .tag {
+   background-color: #81b29a;
+   border-radius: 20px;
+   padding: 4px 10px;
+   font-size: 14px;
+   color: white;
+   margin-left: 5px;
+ }
+ .tags {
+  display: flex;
  }
 
 
+}
 
- .big-shop-card {
-    #shop-pic {
-      width: 40%;
-      border: 8px solid #e07a5f;
-      object-fit: cover;
+
+
+.big-shop-card {
+  #shop-pic {
+    width: 40%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 440px;
+    border-radius: 4px;
+  }
+  .tag {
+    background-color: #81b29a;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 14px;
+    color: white;
+    width: fit-content;
+    margin-bottom: 15px;
+    margin-right: 6px;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.2);
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  .right-card {
+    margin: 20px;
+    .top-border {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding-top: 15px;
+      margin-top: 15px;
     }
-    .tag {
-      background-color: #81b29a;
-      border-radius: 20px;
-      padding: 4px 10px;
-      font-size: 14px;
-      color: white;
-      width: fit-content;
-      margin-bottom: 15px;
-    }
-    h3 {
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: rgba(0, 0, 0, 0.2);
-    }
-    p {
+  }
+}
+
+
+
+
+.product-card {
+  width: min-content;
+  margin: 10px 20px;
+  .top-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #price {
+      margin-top: 8px;
       margin-bottom: 0px;
+      font-weight: 800;
+      color: rgba(0, 0, 0, 0.4);
     }
-    .right-card {
-      margin: 20px;
-      .top-border {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        padding-top: 15px;
-        margin-top: 15px;
-      }
-    }
- }
+  }
+  img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+  }
+  h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-weight: 100;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+
+#articles-card {
+  margin-top: 40px;
+  padding: 20px 50px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  h2 {
+    font-size: 30px;
+    margin-top: 8px;
+    font-weight: 800;
+  }
+}
