@@ -310,7 +310,7 @@ owner10.save
 commerce10 = Commerce.new(
   name: "Atelier 13m2",
   description: "Création d'objets de décoration, sculptures, luminaires",
-  tag: "artisant,produits locaux,décoration",
+  tag: "artisanat,produits locaux,décoration",
   tel: "06.66.43.10.59",
   mail: "lenglart.morgane@gmail.com",
   address: "Bordustard, 56360 Le Palais",
@@ -382,7 +382,7 @@ owner13.save
 commerce13 = Commerce.new(
   name: "Amarente",
   description: "Soins de beauté visage et corps (épilations, soins visage, beauté du regard, beauté des mains et pieds, conseils beauté...) massages bien-être et énergétiques. Je vous reçois à mon domicile. Cartes cadeaux en ligne et/ou livraison cartes 'carton' en livraison durant la fermeture administrative.",
-  tag: "artisant,produits locaux,décoration",
+  tag: "beauté",
   tel: "06.74.75.72.83",
   mail: "muriel.lorec@orange.fr",
   address: "19 Quai Gambetta - étage 1, 56360 Le Palais",
