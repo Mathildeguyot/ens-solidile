@@ -393,3 +393,238 @@ commerce13 = Commerce.new(
 )
 commerce13.save
 commerce13.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605120874/amarente_wzhq2i.jpg"), filename: "amarente_wzhq2i")
+
+
+
+#LA BELLE AU BOIS
+
+owner14 = Owner.new(
+  pseudo: "Maryse Foulgoc",
+  description: ""
+)
+owner14.save
+
+commerce14 = Commerce.new(
+  name: "La Belle au Bois",
+  description: "Magasin de jouets en bois et jeux pour tous les âges, marques françaises et européennes.",
+  tag: "loisirs,enfance",
+  tel: "06.10.70.35.54",
+  mail: "labelleaubois56@orange.fr",
+  address: "4 rue de la Citadelle, 56360 Le Palais",
+  website: "https://www.facebook.com/labelleauboisbelleile",
+  payment: "click & collect (espèces / carte / chèque)",
+  support: "Retrait des achats en magasin.",
+  owner: owner14
+)
+commerce14.save
+commerce14.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605177617/labelleaubois_y2t7yv.jpg"), filename: "labelleaubois_y2t7yv")
+
+product1_commerce14 = Product.new(
+  name: "Puzzles 3D",
+  description: "Marque italienne.",
+  price: 23,
+  commerce: commerce14
+)
+product1_commerce14.save
+product1_commerce14.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605177959/125020752_412107946466010_3294831533753703519_n_-_Ludivine_Pre%CC%81vot_qmc64e.jpg"), filename: "125020752_412107946466010_3294831533753703519_n_-_Ludivine_Prévot_qmc64e")
+
+
+product2_commerce14 = Product.new(
+  name: "Livres sonores",
+  description: "Marque italienne.",
+  price: 20,
+  commerce: commerce14
+)
+product2_commerce14.save
+product2_commerce14.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605177913/124913765_825594948240373_6777012488168195893_n_-_Ludivine_Pre%CC%81vot_cjnf03.jpg"), filename: "124913765_825594948240373_6777012488168195893_n_-_Ludivine_Prévot_cjnf03")
+
+
+product3_commerce14 = Product.new(
+  name: "Jouets en bois",
+  description: "Marque Vilac. De 10€ à 90€ en fonction du modèle.",
+  commerce: commerce14
+)
+product3_commerce14.save
+product3_commerce14.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605177911/124625614_363335548282754_8403722844926922000_n_-_Ludivine_Pre%CC%81vot_mxf2ay.jpg"), filename: "124625614_363335548282754_8403722844926922000_n_-_Ludivine_Prévot_mxf2ay")
+
+
+
+#EXCALIBUR
+
+owner15 = Owner.new(
+  pseudo: "Henry Nunney",
+  description: ""
+)
+owner15.save
+owner15.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605196762/Logo_Excalibur_-_Henry_Nunney_zazrn2.jpg"), filename: "Logo_Excalibur_-_Henry_Nunney_zazrn2")
+
+commerce15 = Commerce.new(
+  name: "Excalibur",
+  description: "Horlogerie-Bijouterie ventes et réparations",
+  tag: "mode",
+  tel: "02.97.31.56.46",
+  mail: "excalibur.belleile@gmail.com",
+  address: "1 rue de Verdun, 56360 Le Palais",
+  payment: "click & collect (espèces / carte / chèque)",
+  support: "Commande par téléphone, sms ou e-mail.",
+  owner: owner15
+)
+commerce15.save
+commerce15.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605179910/fac%CC%A7ade_Excalibur_-_Henry_Nunney_mfypob.jpg"), filename: "façade_Excalibur_-_Henry_Nunney_mfypob")
+
+product1_commerce15 = Product.new(
+  name: "Montre Chronographe Festina",
+  price: 169,
+  commerce: commerce15
+)
+product1_commerce15.save
+product1_commerce15.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605179893/f20370_1_-_Henry_Nunney_rfenoy.png"), filename: "f20370_1_-_Henry_Nunney_rfenoy")
+
+
+product2_commerce15 = Product.new(
+  name: "Bague en or",
+  description: "Or 750/000 1,40g avec un rubis taille 54",
+  price: 250,
+  commerce: commerce15
+)
+product2_commerce15.save
+product2_commerce15.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605179888/006062-1_-_Henry_Nunney_ykamja.jpg"), filename: "006062-1_-_Henry_Nunney_ykamja")
+
+
+product3_commerce15 = Product.new(
+  name: "Collier argent Murat",
+  price: 89,
+  commerce: commerce15
+)
+product3_commerce15.save
+product3_commerce15.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605179890/011966-1_-_Henry_Nunney_cywqmu.jpg"), filename: "011966-1_-_Henry_Nunney_cywqmu")
+
+
+
+
+#LA LONGUE VUE
+
+owner16 = Owner.new(
+  pseudo: "Librairie La Longue Vue",
+  description: ""
+)
+owner16.save
+owner16.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605203643/Mister_pief_-_Naudin_Sophie_c56af2.png"), filename: "Mister_pief_-_Naudin_Sophie_c56af2")
+
+commerce16 = Commerce.new(
+  name: "Librairie La Longue Vue",
+  description: "Découvrez le livre que vous ne cherchiez pas ! Ouverte toute l'année, la LIBRAIRIE LA LONGUE VUE propose livres neufs ou d'occasion, bandes dessinées ou livres jeunesse, polars ou littérature française et étrangère.",
+  tag: "loisirs",
+  tel: "02.97.14.13.99",
+  mail: "librairie.lalonguevue@gmail.com",
+  address: "Avenue Carnot, 56360 Le Palais",
+  website: "https://www.librairielalonguevue.fr/",
+  payment: "click & collect (espèces / carte / chèque) et en ligne via le e-shop.",
+  support: "Commandez sur www.librairielalonguevue.fr ou au 02.97.14.13.99 ou 06.64.20.31.96
+Retirez et réglez chez nos partenaires : Ici on aime - Le Palais, Vival - Sauzon, Proxi
+ - Bangor, Le Kervi - Kervilahouen , La Fontaine - Locmaria.
+Frais d'expédition gratuits en dehors de Belle-Île pendant le confinement !",
+  owner: owner16
+)
+commerce16.save
+commerce16.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605203650/Librairie_La_Longue_Vue_-_Naudin_Sophie_lix6ew.jpg"), filename: "Librairie_La_Longue_Vue_-_Naudin_Sophie_lix6ew")
+
+
+
+#ICI ON AIME
+
+owner17 = Owner.new(
+  pseudo: "Déborah Painvin",
+  description: ""
+)
+owner17.save
+owner17.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605204351/logo_ICIOA_fond_blanc_-_Deborah_Painvin_qy79sh.png"), filename: "logo_ICIOA_fond_blanc_-_Deborah_Painvin_qy79sh")
+
+commerce17 = Commerce.new(
+  name: "Ici on aime",
+  description: "Épicerie fine proposant des produits de qualité, pour accompagner tous vos moments conviviaux (petit déjeuner, apéritif, pique-nique...). Sucré, salé, condiment, café, thé... Paniers gourmands pour offrir ou se faire plaisir.",
+  tag: "produits locaux,gastronomie",
+  mail: "icionaime.bi@gmail.com",
+  address: "11 Avenue Carnot, 56360 Le Palais",
+  website: "https://www.facebook.com/icionaimebelleile",
+  payment: "Sur place (espèces / carte / chèque).",
+  support: "L'épicerie reste ouverte pendant le confinement. Venir directement à la boutique, Lundi, Mardi, Jeudi, Vendredi et Samedi de 9h30 à 12h30 et de 16h00 à 18h30.",
+  owner: owner17
+)
+commerce17.save
+commerce17.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605204391/Photo_fac%CC%A7ade_-_Deborah_Painvin_qvratc.jpg"), filename: "Photo_façade_-_Deborah_Painvin_qvratc")
+
+
+
+#L'ANA'TIFS COIFFURE
+
+owner18 = Owner.new(
+  pseudo: "L'ana'tifs coiffure",
+  description: ""
+)
+owner18.save
+owner18.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205116/sandrine_salon_OFFICE_-_sandrine_lucas_mheuuy.jpg"), filename: "sandrine_salon_OFFICE_-_sandrine_lucas_mheuuy")
+
+commerce18 = Commerce.new(
+  name: "L'ANA'TIFS COIFFURE",
+  description: "Salon de coiffure",
+  tag: "beauté",
+  address: "22 Avenue Carnot, 56360 Le Palais",
+  tel: "06.95.13.75.94",
+  website: "https://www.facebook.com/Lanatifscoiffure56",
+  payment: "Sur place (espèces / chèque).",
+  support: "Appelez pour prendre rendez-vous !",
+  owner: owner18
+)
+commerce18.save
+commerce18.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205116/salon_2_-_sandrine_lucas_l4ipn4.jpg"), filename: "salon_2_-_sandrine_lucas_l4ipn4")
+
+
+
+#COLORISLE
+
+owner19 = Owner.new(
+  pseudo: "Jean-Luc Boehm",
+  description: ""
+)
+owner19.save
+owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205933/1E37B573-DDF6-4D41-975D-51D76781623C_-_karine_boehm_ujarx2.jpg"), filename: "1E37B573-DDF6-4D41-975D-51D76781623C_-_karine_boehm_ujarx2")
+
+owner19 = Commerce.new(
+  name: "Color'isle",
+  description: "Entreprise de peinture / Vente de peinture et outillage / Vente et pose de poêles à bois et accessoires de fumisterie / Magasin pour Professionnels & Particuliers. Ramonage.",
+  tag: "décoration",
+  tel: "02.97.31.89.43",
+  mail: "color-isle@orange.fr",
+  website: "https://www.facebook.com/Colorisle-1640949656167686/",
+  address: "3 ZA de Merezelle, 56360 Le Palais",
+  payment: "Sur place (espèces / carte / chèque)",
+  support: "Le magasin reste ouvert pendant le confinement.",
+  owner: owner19
+)
+owner19.save
+owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205935/059956AF-F977-441E-9C6B-EDE95E107918_-_karine_boehm_ikxuk1.jpg"), filename: "059956AF-F977-441E-9C6B-EDE95E107918_-_karine_boehm_ikxuk1")
+
+product1_owner19 = Product.new(
+  name: "Show Room poêles",
+  commerce: owner19
+)
+product1_owner19.save
+product1_owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205988/D05E6F48-FDBB-4377-89E2-CF2CFEBAFC9F_-_karine_boehm_nmqr4i.jpg"), filename: "D05E6F48-FDBB-4377-89E2-CF2CFEBAFC9F_-_karine_boehm_nmqr4i")
+
+
+product2_owner19 = Product.new(
+  name: "Peinture &outillage/Machine à teinter ",
+  commerce: owner19
+)
+product2_owner19.save
+product2_owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205935/9AA2CE7C-F763-4F47-845D-B85E1C36B66D_-_karine_boehm_uwxh5d.jpg"), filename: "9AA2CE7C-F763-4F47-845D-B85E1C36B66D_-_karine_boehm_uwxh5d")
+
+
+product3_owner19 = Product.new(
+  name: "Accessoires déco",
+  commerce: owner19
+)
+product3_owner19.save
+product3_owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205993/E898F807-624D-4168-921C-262B99165C52_-_karine_boehm_yytws6.jpg"), filename: "E898F807-624D-4168-921C-262B99165C52_-_karine_boehm_yytws6")
+

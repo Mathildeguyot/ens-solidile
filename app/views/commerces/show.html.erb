@@ -8,7 +8,11 @@
       <h3>PROPRIÉTAIRE</h3>
       <p><%= @commerce.owner.pseudo %></p>
     </div>
-    <img class="avatar" src="https://oasys.ch/wp-content/uploads/2019/03/photo-avatar-profil.png" alt="">
+    <% if @commerce.owner.photo.attached? %>
+      <%= cl_image_tag @commerce.owner.photo.key, class: "avatar" %>
+    <% else %>
+      <img class="avatar" src="https://oasys.ch/wp-content/uploads/2019/03/photo-avatar-profil.png" alt="">
+    <% end %>
   </div>
 </div>
 
