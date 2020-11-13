@@ -4,6 +4,8 @@
  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.1);
  margin: 15px;
  border-radius: 4px;
+ border: 1px solid $light-gray;
+ transition: 0.3s ease-in-out;
  img {
    width: 360px;
    height: 340px;
@@ -32,6 +34,10 @@
  }
  .tags {
   display: flex;
+ }
+ &:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
  }
 
 
@@ -68,6 +74,7 @@
   }
   .right-card {
     margin: 20px;
+    width: -webkit-fill-available;
     .top-border {
       border-top: 1px solid rgba(0, 0, 0, 0.1);
       padding-top: 15px;
