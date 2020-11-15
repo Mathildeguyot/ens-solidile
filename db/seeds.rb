@@ -17,19 +17,18 @@ Owner.destroy_all
 #MARGOT ET COMPAGNIE
 
 owner1 = Owner.new(
-  pseudo: "Martine Lalouse",
-  description: ""
+  pseudo: "Martine Lalouse"
 )
 owner1.save
 
 commerce1 = Commerce.new(
   name: "Margot et Compagnie",
-  description: "Boutique créée en 2012, ouverte à l'année, et spécialisée en Arts de la Table, décoration, linge de maison, cadeaux et souvenirs.",
+  description: "Boutique créée en 2012, ouverte à l'année et spécialisée en arts de la table, décoration, linge de maison, cadeaux et souvenirs.",
   tag: "décoration",
   tel: "06.08.36.88.79",
   mail: "lalouse.martine@orange.fr",
   address: "9 rue de l'Eglise, 56360 Le Palais",
-  website: "https://www.facebook.com/pages/category/Gift-Shop/Margot-et-Compagnie-Belle-Ile-en-mer-923988161000459/",
+  facebook: "https://www.facebook.com/pages/category/Gift-Shop/Margot-et-Compagnie-Belle-Ile-en-mer-923988161000459/",
   payment: "click & collect (espèces / carte / chèque)",
   support: "Présence en boutique, le Mardi, Vendredi et Samedi matin de 10h00 à 12h30 et sur rendez-vous l'après-midi pour retrait et paiement des commandes. Possibilité de Livraison. E-shop à venir...",
   owner: owner1
@@ -95,8 +94,7 @@ commerce2.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/
 #REVERIES D'ILE
 
 owner3 = Owner.new(
-  pseudo: "Véronique Lambotin",
-  description: ""
+  pseudo: "Véronique Lambotin"
 )
 owner3.save
 
@@ -106,7 +104,8 @@ commerce3 = Commerce.new(
   tag: "décoration,artisanat,produits locaux",
   tel: "06.86.73.84.04",
   mail: "reveriesdile@gmail.com",
-  address: "Rue Lieutenant Riou, 56360 SAUZON",
+  address: "Rue Lieutenant Riou, 56360 Sauzon",
+  facebook: "https://www.facebook.com/R%C3%AAveries-dIle-V%C3%A9ronique-Lambotin-Artisanat-du-verre-1393631734107274/",
   website: "https://sites.google.com/view/reveriesdile/",
   payment: "click & collect (espèces / carte / chèque)",
   support: "Vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
@@ -126,12 +125,13 @@ owner4.save
 
 commerce4 = Commerce.new(
   name: "Potr'Yves Parlevent",
-  description: "Poteries Céramiques fait main, pièces uniques. Utilitaires ou déco, crèches et décoration de Noël. Possibilités de commandes. Mon atelier à Parlevent - Bangor est ouvert toute l'année sur rendez-vous au 06 35 91 62 86 ou potryves@gmail.com.",
+  description: "Poteries céramiques faites main, pièces uniques. Utilitaires ou déco, crèches et décoration de Noël. Possibilités de commandes. Mon atelier à Parlevent - Bangor est ouvert toute l'année sur rendez-vous au 06 35 91 62 86 ou potryves@gmail.com.",
   tag: "artisanat,décoration,produits locaux",
   tel: "06.35.91.62.86",
   mail: "potryves@gmail.com",
   address: "Parlevent, 56360 Bangor",
   website: "https://www.potryves-parlevent.fr/",
+  facebook: "https://www.facebook.com/poterieceramique.belle.ile",
   payment: "click & collect (espèces / carte / chèque)",
   support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.
   Il est tout à fait possible de venir retirer les marchandises achetées à Parlevent à ma caravane d'expo et je peux aussi livrer",
@@ -184,12 +184,12 @@ commerce5 = Commerce.new(
   name: "Shopburo",
   description: "Vente de fournitures de bureau, scolaires, accessoires informatiques, de créativité .
 Service de bureautique : photocopie du A3 au A6, copie, scan, impression photo, reliure, destructions documents, plastifications A4 au A6.
-Personnalisation sur support : tee-shirt, mug, porte clé, set de table, pochette, pulzze",
+Personnalisation sur support : tee-shirt, mug, porte-clé, set de table, pochette, puzzle",
   tag: "papeterie",
   tel: "02.97.31.99.15",
   mail: "buroplus@wanadoo.fr",
   address: "Rue Vauban 56360 Locmaria",
-  website: "https://www.facebook.com/shopburo.fr",
+  facebook: "https://www.facebook.com/shopburo.fr",
   payment: "click & collect (espèces / carte / chèque)",
   support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner5
@@ -212,7 +212,7 @@ commerce6 = Commerce.new(
   tel: "06.99.45.49.53",
   mail: "moonbreak56@hotmail.com",
   address: "Place Bigarré 56360 Le Palais",
-  website: "https://www.facebook.com/MoonBreakSurfShop/",
+  facebook: "https://www.facebook.com/MoonBreakSurfShop/",
   payment: "click & collect (espèces / carte / chèque)",
   support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner6
@@ -236,9 +236,8 @@ commerce7 = Commerce.new(
   tel: "06.87.52.01.26",
   mail: "burejuliette@yahoo.fr",
   address: "6 Place Bigarré 56360 Le Palais",
-  website: "https://www.facebook.com/shopburo.fr",
   payment: "click & collect (espèces / carte / chèque)",
-  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner7
 )
 commerce7.save
@@ -256,20 +255,20 @@ owner8.save
 commerce8 = Commerce.new(
   name: "HAPPYness",
   description: "Concept store bébé, enfant & ado
--Sélection de vêtement 1m / 18 ans à prix tout doux  (les coups de coeur HAPPYness)
+- Sélection de vêtement 1m / 18 ans à prix tout doux (les coups de coeur HAPPYness)
 - Des loisirs créatifs pour s'amuser de 7 à 77 ans
 - Des jeux éducatifs
 - De la déco vachement sympa pour la chambre
-- Des accessoires (sacs à dos, cartable, trousses, chapeaux, tattoo...)
-- Liste de naissance (Bavoirs, veilleuse,chaussons, mobiles, peluche)
+- Des accessoires (sacs à dos, cartables, trousses, chapeaux, tattoo...)
+- Liste de naissance (Bavoirs, veilleuses, chaussons, mobiles, peluches)
 - Cadeaux, Surprises, carterie",
   tag: "loisirs,mode,enfance",
   tel: "06.12.45.89.73",
   mail: "happyness56360@gmail.com",
   address: "8 rue de la Citadelle 56360 Le Palais",
-  website: "https://www.facebook.com/HAPPYnessbellile",
+  facebook: "https://www.facebook.com/HAPPYnessbellile",
   payment: "click & collect (espèces / carte / chèque)",
-  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter la page de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner8
 )
 commerce8.save
@@ -290,9 +289,9 @@ commerce9 = Commerce.new(
   tel: "06.12.45.89.73",
   mail: "mosarion@gmail.com",
   address: "21 Avenue Carnot, 56360 Le Palais",
-  website: "https://www.facebook.com/marion.kerignardmosaique",
+  facebook: "https://www.facebook.com/marion.kerignardmosaique",
   payment: "click & collect (espèces / chèque)",
-  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter la page de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner9
 )
 commerce9.save
@@ -302,8 +301,7 @@ commerce9.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/
 #ATELIER 13M2
 
 owner10 = Owner.new(
-  pseudo: "Morgane Lenglart",
-  description: ""
+  pseudo: "Morgane Lenglart"
 )
 owner10.save
 
@@ -314,9 +312,10 @@ commerce10 = Commerce.new(
   tel: "06.66.43.10.59",
   mail: "lenglart.morgane@gmail.com",
   address: "Bordustard, 56360 Le Palais",
-  website: "https://www.facebook.com/atelier13m2",
+  facebook: "https://www.facebook.com/atelier13m2",
+  website: "www.atelier-13m2.com",
   payment: "click & collect (espèces / chèque)",
-  support: "En attendant l'ouverture d'un e-shop, vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  support: "Vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner10
 )
 commerce10.save
@@ -334,14 +333,14 @@ owner11.save
 
 commerce11 = Commerce.new(
   name: "La Main à la Pat'",
-  description: "Crêperie de caractère(s) à Belle-île-en-mer. Nous utilisons exclusivement des produits frais et de saison, un maximum de produits locaux (légumes, lait, fromages, glaces, thés et tisanes, saumon, chocolat, apéritifs, vins, charcuterie), et ce toute l’année.",
+  description: "Crêperie de caractère à Belle-île-en-mer. Nous utilisons exclusivement des produits frais et de saison, un maximum de produits locaux (légumes, lait, fromages, glaces, thés et tisanes, saumon, chocolat, apéritifs, vins, charcuterie), et ce toute l’année.",
   tag: "gastronomie",
   tel: "06.85.07.59.23",
   mail: "lamainalapat@hotmail.fr",
   address: "1 rue de l'Église, 56360 Le Palais",
-  website: "https://www.facebook.com/lamainalapat",
+  facebook: "https://www.facebook.com/lamainalapat",
   payment: "click & collect (espèces / chèque)",
-  support: "Vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
+  support: "Vous pouvez visiter la page de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner11
 )
 commerce11.save
@@ -351,8 +350,7 @@ commerce11.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image
 #SPAR
 
 owner12 = Owner.new(
-  pseudo: "Valérie Fortin",
-  description: ""
+  pseudo: "Valérie Fortin"
 )
 owner12.save
 
@@ -365,7 +363,7 @@ commerce12 = Commerce.new(
   address: "56360 Locmaria",
   website: "https://www.spar.fr/",
   payment: "click & collect (espèces / chèque)",
-  support: "",
+  support: "Le commerce est ouvert pendant le confinement.",
   owner: owner12
 )
 commerce12.save
@@ -381,14 +379,15 @@ owner13.save
 
 commerce13 = Commerce.new(
   name: "Amarente",
-  description: "Soins de beauté visage et corps (épilations, soins visage, beauté du regard, beauté des mains et pieds, conseils beauté...) massages bien-être et énergétiques. Je vous reçois à mon domicile. Cartes cadeaux en ligne et/ou livraison cartes 'carton' en livraison durant la fermeture administrative.",
+  description: "Soins de beauté visage et corps (épilations, soins visage, beauté du regard, beauté des mains et pieds, conseils beauté...) massages bien-être et énergétiques.",
   tag: "beauté",
   tel: "06.74.75.72.83",
   mail: "muriel.lorec@orange.fr",
   address: "19 Quai Gambetta - étage 1, 56360 Le Palais",
+  facebook: "https://www.facebook.com/amarantemlorec",
   website: "https://app.flexybeauty.com/amarante/home",
   payment: "Sur place (espèces / chèque) - e-shop",
-  support: "Vous pouvez vous rendre sur le site de la boutique ou contacter le gérant pour faire une commande.",
+  support: "Je vous reçois à mon domicile. Cartes cadeaux en ligne et/ou livraison cartes 'carton' en livraison durant la fermeture administrative.",
   owner: owner13
 )
 commerce13.save
@@ -411,7 +410,7 @@ commerce14 = Commerce.new(
   tel: "06.10.70.35.54",
   mail: "labelleaubois56@orange.fr",
   address: "4 rue de la Citadelle, 56360 Le Palais",
-  website: "https://www.facebook.com/labelleauboisbelleile",
+  facebook: "https://www.facebook.com/labelleauboisbelleile",
   payment: "click & collect (espèces / carte / chèque)",
   support: "Retrait des achats en magasin.",
   owner: owner14
@@ -460,7 +459,7 @@ owner15.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/up
 
 commerce15 = Commerce.new(
   name: "Excalibur",
-  description: "Horlogerie-Bijouterie ventes et réparations",
+  description: "Horlogerie-bijouterie. Ventes et réparations.",
   tag: "mode",
   tel: "02.97.31.56.46",
   mail: "excalibur.belleile@gmail.com",
@@ -518,6 +517,7 @@ commerce16 = Commerce.new(
   tel: "02.97.14.13.99",
   mail: "librairie.lalonguevue@gmail.com",
   address: "Avenue Carnot, 56360 Le Palais",
+  facebook: "https://www.facebook.com/librairie.lalonguevue",
   website: "https://www.librairielalonguevue.fr/",
   payment: "click & collect (espèces / carte / chèque) et en ligne via le e-shop.",
   support: "Commandez sur www.librairielalonguevue.fr ou au 02.97.14.13.99 ou 06.64.20.31.96
@@ -559,8 +559,7 @@ commerce17.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image
 #L'ANA'TIFS COIFFURE
 
 owner18 = Owner.new(
-  pseudo: "L'ana'tifs coiffure",
-  description: ""
+  pseudo: "L'ana'tifs coiffure"
 )
 owner18.save
 owner18.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205116/sandrine_salon_OFFICE_-_sandrine_lucas_mheuuy.jpg"), filename: "sandrine_salon_OFFICE_-_sandrine_lucas_mheuuy")
@@ -571,7 +570,7 @@ commerce18 = Commerce.new(
   tag: "beauté",
   address: "22 Avenue Carnot, 56360 Le Palais",
   tel: "06.95.13.75.94",
-  website: "https://www.facebook.com/Lanatifscoiffure56",
+  facebook: "https://www.facebook.com/Lanatifscoiffure56",
   payment: "Sur place (espèces / chèque).",
   support: "Appelez pour prendre rendez-vous !",
   owner: owner18
@@ -584,47 +583,234 @@ commerce18.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image
 #COLORISLE
 
 owner19 = Owner.new(
-  pseudo: "Jean-Luc Boehm",
-  description: ""
+  pseudo: "Jean-Luc Boehm"
 )
 owner19.save
 owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205933/1E37B573-DDF6-4D41-975D-51D76781623C_-_karine_boehm_ujarx2.jpg"), filename: "1E37B573-DDF6-4D41-975D-51D76781623C_-_karine_boehm_ujarx2")
 
-owner19 = Commerce.new(
+commerce19 = Commerce.new(
   name: "Color'isle",
-  description: "Entreprise de peinture / Vente de peinture et outillage / Vente et pose de poêles à bois et accessoires de fumisterie / Magasin pour Professionnels & Particuliers. Ramonage.",
+  description: "Entreprise de peinture / Vente de peinture et outillage / Vente et pose de poêles à bois et accessoires de fumisterie / magasin pour professionnels & particuliers. Ramonage.",
   tag: "décoration",
   tel: "02.97.31.89.43",
   mail: "color-isle@orange.fr",
-  website: "https://www.facebook.com/Colorisle-1640949656167686/",
+  facebook: "https://www.facebook.com/Colorisle-1640949656167686/",
   address: "3 ZA de Merezelle, 56360 Le Palais",
   payment: "Sur place (espèces / carte / chèque)",
   support: "Le magasin reste ouvert pendant le confinement.",
   owner: owner19
 )
-owner19.save
-owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205935/059956AF-F977-441E-9C6B-EDE95E107918_-_karine_boehm_ikxuk1.jpg"), filename: "059956AF-F977-441E-9C6B-EDE95E107918_-_karine_boehm_ikxuk1")
+commerce19.save
+commerce19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205935/059956AF-F977-441E-9C6B-EDE95E107918_-_karine_boehm_ikxuk1.jpg"), filename: "059956AF-F977-441E-9C6B-EDE95E107918_-_karine_boehm_ikxuk1")
 
-product1_owner19 = Product.new(
+product1_commerce19 = Product.new(
   name: "Show Room poêles",
-  commerce: owner19
+  commerce: commerce19
 )
-product1_owner19.save
-product1_owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205988/D05E6F48-FDBB-4377-89E2-CF2CFEBAFC9F_-_karine_boehm_nmqr4i.jpg"), filename: "D05E6F48-FDBB-4377-89E2-CF2CFEBAFC9F_-_karine_boehm_nmqr4i")
+product1_commerce19.save
+product1_commerce19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205988/D05E6F48-FDBB-4377-89E2-CF2CFEBAFC9F_-_karine_boehm_nmqr4i.jpg"), filename: "D05E6F48-FDBB-4377-89E2-CF2CFEBAFC9F_-_karine_boehm_nmqr4i")
 
 
-product2_owner19 = Product.new(
+product2_commerce19 = Product.new(
   name: "Peinture &outillage/Machine à teinter ",
-  commerce: owner19
+  commerce: commerce19
 )
-product2_owner19.save
-product2_owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205935/9AA2CE7C-F763-4F47-845D-B85E1C36B66D_-_karine_boehm_uwxh5d.jpg"), filename: "9AA2CE7C-F763-4F47-845D-B85E1C36B66D_-_karine_boehm_uwxh5d")
+product2_commerce19.save
+product2_commerce19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205935/9AA2CE7C-F763-4F47-845D-B85E1C36B66D_-_karine_boehm_uwxh5d.jpg"), filename: "9AA2CE7C-F763-4F47-845D-B85E1C36B66D_-_karine_boehm_uwxh5d")
 
 
-product3_owner19 = Product.new(
+product3_commerce19 = Product.new(
   name: "Accessoires déco",
-  commerce: owner19
+  commerce: commerce19
 )
-product3_owner19.save
-product3_owner19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205993/E898F807-624D-4168-921C-262B99165C52_-_karine_boehm_yytws6.jpg"), filename: "E898F807-624D-4168-921C-262B99165C52_-_karine_boehm_yytws6")
+product3_commerce19.save
+product3_commerce19.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605205993/E898F807-624D-4168-921C-262B99165C52_-_karine_boehm_yytws6.jpg"), filename: "E898F807-624D-4168-921C-262B99165C52_-_karine_boehm_yytws6")
+
+
+
+
+#MER ET FILLE
+
+owner20 = Owner.new(
+  pseudo: "Elodie Gravier"
+)
+
+owner20.save
+owner20.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605436487/image_-_E%CC%81lodie_Gravier_1_g3rkts.jpg"), filename: "image_-_Élodie_Gravier_1_g3rkts")
+
+commerce20 = Commerce.new(
+  name: "Mer&Fille",
+  description: "Boutique de mode femme.",
+  tag: "mode",
+  tel: "06.19.60.42.75",
+  mail: "meretfille56@yahoo.com",
+  address: "Place de la République, 56360 Le Palais",
+  payment: "Sur place (espèces / chèque)",
+  support: "Vitrine photo sur Facebook prise de rdv. Possibilité de livraison.",
+  owner: owner20
+)
+commerce20.save
+commerce20.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605436493/image_-_E%CC%81lodie_Gravier_lto96v.jpg"), filename: "image_-_Élodie_Gravier_lto96v")
+
+product1_commerce20 = Product.new(
+  name: "Jott avec capuche",
+  price: 160,
+  commerce: commerce20
+)
+product1_commerce20.save
+product1_commerce20.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605436562/6BBE8200-8CD1-4170-AFF3-2223A8C2FC07_-_E%CC%81lodie_Gravier_zqiozf.jpg"), filename: "6BBE8200-8CD1-4170-AFF3-2223A8C2FC07_-_Élodie_Gravier_zqiozf")
+
+
+product2_commerce20 = Product.new(
+  name: "Boots Pataugas",
+  price: 89,
+  commerce: commerce20,
+)
+product2_commerce20.save
+product2_commerce20.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605436550/1D48FD4D-5FA3-4688-9F3A-7A5EB88634BB_-_E%CC%81lodie_Gravier_dccs1e.jpg"), filename: "1D48FD4D-5FA3-4688-9F3A-7A5EB88634BB_-_Élodie_Gravier_dccs1e")
+
+
+product3_commerce20 = Product.new(
+  name: "Veja entre 99€ et 125€",
+  commerce: commerce20
+)
+product3_commerce20.save
+product3_commerce20.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605436547/AF0CD293-F0C0-4B34-BC32-3AC0241F5D8C_-_E%CC%81lodie_Gravier_w68qda.png"), filename: "AF0CD293-F0C0-4B34-BC32-3AC0241F5D8C_-_Élodie_Gravier_w68qda")
+
+
+
+
+#LA BIEN NOMMÉE
+
+owner21 = Owner.new(
+  pseudo: "La Bien Nommée"
+)
+
+owner21.save
+owner21.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605437799/La-Bien-Nomme%CC%81e-logo-web_-_Marie_Que%CC%81re%CC%81_wqanz4.png"), filename: "La-Bien-Nommée-logo-web_-_Marie_Quéré_wqanz4")
+
+commerce21 = Commerce.new(
+  name: "La Bien Nommée",
+  description: "Avec notre savoir-faire et des ingrédients de qualité, nous fabriquons des gourmandises uniques en harmonie avec la naturalité de l'île. Nous mettons au point nos recettes et fabriquons artisanalement tous nos produits sur Belle-Île-en-Mer, dans notre atelier de fabrication qui compte à l’année une vingtaine d’emplois sur l’île.",
+  tag: "produits locaux,artisanat,gastronomie",
+  tel: "02.97.31.34.99",
+  mail: "service.client@labiennommee.bzh",
+  website: "https://www.labiennommee.bzh/",
+  facebook: "https://www.facebook.com/labiennommee/",
+  address: "ZA Bordilla - 56360 Le Palais",
+  payment: "En ligne",
+  support: "Rendez-vous sur notre boutique en ligne où vous pourrez retrouver l'ensemble de nos produits. Remplissez votre panier avec les gourmandises qui vous font plaisir puis choisissez un mode de livraison (en point relais ou à domicile). Le paiement s'effectue depuis notre plateforme sécurisée de paiement en ligne.",
+  owner: owner21
+)
+commerce21.save
+commerce21.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605437876/Ga%CC%82teau-breton---LBN---BD_-_Marie_Que%CC%81re%CC%81_jbar4k.jpg"), filename: "Gâteau-breton---LBN---BD_-_Marie_Quéré_jbar4k")
+
+product1_commerce21 = Product.new(
+  name: "Galettes fines au blé noir - Coffret de 500 g",
+  price: 11.50,
+  description: "Ces biscuits d'une finesse remarquable seront aussi délicieux émiettés dans des verrines, un crumble ou un tiramisu que pour agrémenter votre dessert : mousse au chocolat, yaourt nature... ou toastés à l'apéritif !",
+  commerce: commerce21
+)
+product1_commerce21.save
+product1_commerce21.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605437320/309_01_-_Marie_Que%CC%81re%CC%81_lveiom.jpg"), filename: "309_01_-_Marie_Quéré_lveiom")
+
+
+product2_commerce21 = Product.new(
+  name: "Caramels au beurre salé - Cube de 110 g",
+  description: "À déguster ou à incorporer dans vos recettes, ces caramels sont un vrai régal 100% bellilois !",
+  price: 4.70,
+  commerce: commerce21,
+)
+product2_commerce21.save
+product2_commerce21.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605437326/976_Cube_caramels_BS_110g_-_Marie_Que%CC%81re%CC%81_nzngaj.jpg"), filename: "976_Cube_caramels_BS_110g_-_Marie_Quéré_nzngaj")
+
+
+product3_commerce21 = Product.new(
+  name: "Crème de caramel au chocolat - Pot de 340 g",
+  price: 6.60,
+  description: "Au petit déjeuner, en dessert ou au goûter, la crème de caramel au chocolat se déguste de mille façons : à tartiner sur du pain frais, en nappage de vos crêpes ou encore dans vos pâtisseries !",
+  commerce: commerce21
+)
+product3_commerce21.save
+product3_commerce21.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605437323/991-Cre%CC%80me-de-caramel-au-chocolat-LBN---pot-340g---BD_-_Marie_Que%CC%81re%CC%81_yozwxg.jpg"), filename: "991-Crème-de-caramel-au-chocolat-LBN---pot-340g---BD_-_Marie_Quéré_yozwxg")
+
+
+
+#BELLE ISLE SIMA
+
+owner22 = Owner.new(
+  pseudo: "Belle-isle Sima"
+)
+owner22.save
+owner22.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605438553/image15_-_Institut_Belle-isle_Sima_em45y7.png"), filename: "image15_-_Institut_Belle-isle_Sima_em45y7")
+
+commerce22 = Commerce.new(
+  name: "Belle-isle Sima",
+  description: "Vente de produits Bio, naturels, Made in France. Prestation : Épilations femme et homme, Manucure, Pédicure, Soin Visage sont a découvrir (les prestations ne sont pas disponibles pendant le confinement).",
+  tag: "beauté",
+  address: "9 Place de la République, 56360 Le Palais",
+  tel: "02.97.29.58.32",
+  mail: "institutbelle-islesima@outlook.fr",
+  website: "https://www.kalendes.com/institutbelle-islesima/#/welcome",
+  facebook: "https://www.facebook.com/institutbelleislesima",
+  payment: "Click & collect (espèces / carte).",
+  support: "Réservez vos produit en ligne, choisir un horaire de retrait en ligne, payer en boutique.",
+  owner: owner22
+)
+commerce22.save
+commerce22.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605438550/image11_-_Institut_Belle-isle_Sima_ot44d1.png"), filename: "image11_-_Institut_Belle-isle_Sima_ot44d1")
+
+
+
+#LES SAVONS DE BELLE-ÎLE
+
+owner23 = Owner.new(
+  pseudo: "Bianca Collin"
+)
+
+owner23.save
+owner23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439317/Logo_Les_Savons_de_Belle_ile_-_passe_part_tout_lioris_gj0zkg.jpg"), filename: "Logo_Les_Savons_de_Belle_ile_-_passe_part_tout_lioris_gj0zkg")
+
+commerce23 = Commerce.new(
+  name: "Les Savons de Belle Ile",
+  description: "Née à Belle ile, je travaille avec des partenaires Bellilois et passionnés pour vous garantir des Savons Naturels aux huiles BIO, fabrication locale et bretonne, à la main jusqu'à l'emballage, des produits cosmétiques sains, éthiques, bons pour vous et pour notre environnement.
+Sans parler bien sur, du Label 'Savoir Faire des Iles du Ponant' qui regroupe des artisans et commerçants Iliens Bretons ! ",
+  tag: "beauté,artisanat,produits locaux",
+  tel: "06.56.73.35.47",
+  website: "https://www.savonsdebelleile.fr/",
+  address: "Le Champ de Course, 56360 Le Palais",
+  payment: "Sur place (espèces / chèque)",
+  support: "N'hésitez pas à visiter notre site internet, vous pouvez commander directement avec paiement sécurisé, sans le port à payer pour les livraisons à Belle-île, appelez moi et nous conviendrons ensemble d'un rendez vous...",
+  owner: owner23
+)
+commerce23.save
+commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439253/IMG_20200612_094937_302_1_-_passe_part_tout_lioris_dhgcik.jpg"), filename: "IMG_20200612_094937_302_1_-_passe_part_tout_lioris_dhgcik")
+
+product1_commerce23 = Product.new(
+  name: "Le Savon au Algues de Belle-Île",
+  description: "Ramassées à chaque grande marée pour leurs cotés exfoliant et vivifiant. Aux huiles BIO, 6% surgras, très doux avec vous, pour tout type de peau.",
+  commerce: commerce23
+)
+product1_commerce23.save
+product1_commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439267/IMG_20191020_172520_1_-_passe_part_tout_lioris_id4gxp.jpg"), filename: "IMG_20191020_172520_1_-_passe_part_tout_lioris_id4gxp")
+
+
+product2_commerce23 = Product.new(
+  name: "Savon au miel de Belle-Île (Richard Laurance Apiculteur à Sauzon)",
+  description: "Vous donne un Savon qui change de couleur selon la saison, un savon tout doux, réparateur et cicatrisant pour les peaux abîmées.",
+  commerce: commerce23,
+)
+product2_commerce23.save
+product2_commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439329/IMG_20191017_191024_-_passe_part_tout_lioris_csoota.jpg"), filename: "IMG_20191017_191024_-_passe_part_tout_lioris_csoota")
+
+
+product3_commerce23 = Product.new(
+  name: "Savon au Lait de Belle-Île (ferme Guégan et Caro)",
+  description: "Un lait à 42 % de matières grasses pour un savon onctueux et généreux, hydratant hydratant et hydratant !!!! Un vrai bonheur pour les peaux sèches et sensibles !",
+  commerce: commerce23
+)
+product3_commerce23.save
+product3_commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439296/IMG_20191007_095647_1_-_passe_part_tout_lioris_laaiv1.jpg"), filename: "IMG_20191007_095647_1_-_passe_part_tout_lioris_laaiv1")
+
+
 

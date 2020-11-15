@@ -24,10 +24,12 @@
 
   <div class="right-card">
 
-    <div class="d-flex">
-      <% @commerce.tag.split(",").each do |x| %>
-        <p class="tag"><%= x %></p>
-      <% end %>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+        <% @commerce.tag.split(",").each do |x| %>
+          <p class="tag"><%= x %></p>
+        <% end %>
+      </div>
     </div>
     <p><%= @commerce.description %></p>
 
@@ -42,11 +44,23 @@
     <div class="top-border d-flex justify-content-between align-items-center">
       <div>
         <h3>CONTACT</h3>
-        <p><i class="fas fa-phone-alt"></i>  <%= @commerce.tel %></p>
-        <p><i class="fas fa-envelope"></i>  <%= @commerce.mail %></p>
+        <% if @commerce.tel != nil %>
+          <p><i class="fas fa-phone-alt"></i>  <%= @commerce.tel %></p>
+        <% end %>
+        <% if @commerce.mail != nil %>
+          <p><i class="fas fa-envelope"></i>  <%= @commerce.mail %></p>
+        <% end %>
       </div>
-      <a class="site-button big" target="_blank" href=<%= @commerce.website %>>Vers le site</a>
+      <div class="">
+        <% if @commerce.website != nil %>
+          <a class="site-button big" target="_blank" href=<%= @commerce.website %>>Vers le site</a>
+        <% end %>
+      </div>
     </div>
+
+    <% if @commerce.facebook != nil  %>
+      <a target="_blank" href=<%= @commerce.facebook %>><i class="fab fa-facebook" id="facebook-button"></i></a>
+    <% end %>
 
   </div>
 </div>
