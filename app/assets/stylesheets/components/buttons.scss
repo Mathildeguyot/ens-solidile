@@ -32,3 +32,14 @@
     border-color: $light-pink;
   }
 }
+
+#facebook-button {
+  font-size: 25px;
+  position: relative;
+  top: 10px;
+  color: $dark-blue;
+  &:hover {
+    color: $orange;
+    transition: 0.2s ease-in-out;
+  }
+}
