@@ -91,6 +91,36 @@ body {
   font-size: 20px;
 }
 
+
+#mobile-menu {
+  position: fixed;
+  background: rgba(5, 71, 108, 0.95);
+  width: 100%;
+  margin-top: -2px;
+  height: 100%;
+  text-decoration: none;
+  padding: 20px;
+  .invisible {
+    opacity: 0;
+  }
+  #tous {
+    color: $orange;
+    font-size: 25px;
+  }
+  .mobile-menu-item {
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    opacity: 1;
+    color: white;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
 // media queries //
 
 //small devices
