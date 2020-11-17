@@ -17,3 +17,31 @@
     margin-bottom: 0px;
   }
 }
+
+
+/*Smallest device*/
+@media (min-width: 100px) and (max-width: 875px) {
+  .big-shop-card {
+    flex-direction: column;
+    #shop-pic {
+      width: 100%;
+      height: 360px;
+    }
+  }
+  .owner-infos {
+    display: none;
+  }
+  .products-grid {
+    flex-direction: column;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 1200px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 1200px) {
+
+}

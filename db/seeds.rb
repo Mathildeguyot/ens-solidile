@@ -313,7 +313,7 @@ commerce10 = Commerce.new(
   mail: "lenglart.morgane@gmail.com",
   address: "Bordustard, 56360 Le Palais",
   facebook: "https://www.facebook.com/atelier13m2",
-  website: "atelier-13m2.com",
+  website: "http://atelier-13m2.com/",
   payment: "click & collect (espèces / chèque)",
   support: "Vous pouvez visiter le site de la boutique et contacter le gérant par mail ou téléphone pour établir un rendez-vous click and collect à l'adresse du magasin.",
   owner: owner10
@@ -811,60 +811,3 @@ product3_commerce23 = Product.new(
 )
 product3_commerce23.save
 product3_commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439296/IMG_20191007_095647_1_-_passe_part_tout_lioris_laaiv1.jpg"), filename: "IMG_20191007_095647_1_-_passe_part_tout_lioris_laaiv1")
-
-
-
-
-
-#LES SAVONS DE BELLE-ÎLE
-
-owner23 = Owner.new(
-  pseudo: "Bianca Collin"
-)
-
-owner23.save
-owner23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439317/Logo_Les_Savons_de_Belle_ile_-_passe_part_tout_lioris_gj0zkg.jpg"), filename: "Logo_Les_Savons_de_Belle_ile_-_passe_part_tout_lioris_gj0zkg")
-
-commerce23 = Commerce.new(
-  name: "Les Savons de Belle Ile",
-  description: "Née à Belle ile, je travaille avec des partenaires Bellilois et passionnés pour vous garantir des Savons Naturels aux huiles BIO, fabrication locale et bretonne, à la main jusqu'à l'emballage, des produits cosmétiques sains, éthiques, bons pour vous et pour notre environnement.
-Sans parler bien sur, du Label 'Savoir Faire des Iles du Ponant' qui regroupe des artisans et commerçants Iliens Bretons ! ",
-  tag: "beauté,artisanat,produits locaux",
-  tel: "06.56.73.35.47",
-  website: "https://www.savonsdebelleile.fr/",
-  address: "Le Champ de Course, 56360 Le Palais",
-  payment: "Sur place (espèces / chèque)",
-  support: "N'hésitez pas à visiter notre site internet, vous pouvez commander directement avec paiement sécurisé, sans le port à payer pour les livraisons à Belle-île, appelez moi et nous conviendrons ensemble d'un rendez vous...",
-  owner: owner23
-)
-commerce23.save
-commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439253/IMG_20200612_094937_302_1_-_passe_part_tout_lioris_dhgcik.jpg"), filename: "IMG_20200612_094937_302_1_-_passe_part_tout_lioris_dhgcik")
-
-product1_commerce23 = Product.new(
-  name: "Le Savon au Algues de Belle-Île",
-  description: "Ramassées à chaque grande marée pour leurs cotés exfoliant et vivifiant. Aux huiles BIO, 6% surgras, très doux avec vous, pour tout type de peau.",
-  commerce: commerce23
-)
-product1_commerce23.save
-product1_commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439267/IMG_20191020_172520_1_-_passe_part_tout_lioris_id4gxp.jpg"), filename: "IMG_20191020_172520_1_-_passe_part_tout_lioris_id4gxp")
-
-
-product2_commerce23 = Product.new(
-  name: "Savon au miel de Belle-Île (Richard Laurance Apiculteur à Sauzon)",
-  description: "Vous donne un Savon qui change de couleur selon la saison, un savon tout doux, réparateur et cicatrisant pour les peaux abîmées.",
-  commerce: commerce23,
-)
-product2_commerce23.save
-product2_commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439329/IMG_20191017_191024_-_passe_part_tout_lioris_csoota.jpg"), filename: "IMG_20191017_191024_-_passe_part_tout_lioris_csoota")
-
-
-product3_commerce23 = Product.new(
-  name: "Savon au Lait de Belle-Île (ferme Guégan et Caro)",
-  description: "Un lait à 42 % de matières grasses pour un savon onctueux et généreux, hydratant hydratant et hydratant !!!! Un vrai bonheur pour les peaux sèches et sensibles !",
-  commerce: commerce23
-)
-product3_commerce23.save
-product3_commerce23.photo.attach(io: URI.open("https://res.cloudinary.com/deylw9hu5/image/upload/v1605439296/IMG_20191007_095647_1_-_passe_part_tout_lioris_laaiv1.jpg"), filename: "IMG_20191007_095647_1_-_passe_part_tout_lioris_laaiv1")
-
-
-

@@ -8,3 +8,26 @@
   display: flex;
   justify-content: center;
 }
+
+
+
+@media (min-width: 100px) and (max-width: 849px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 850px) and (max-width: 1267px) {
+  .shop-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 1268px) {
+  .shop-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

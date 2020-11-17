@@ -11,10 +11,6 @@
 
 
   <div class="right">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
 
     <ul class="navbar-nav mr-auto">
       <div class="general">
@@ -53,5 +49,53 @@
         </li>
       </div>
     </ul>
+
+    <div id="menu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+
   </div>
+
+</div>
+
+
+
+
+<div id="mobile-menu" class="invisible">
+  <ul>
+    <li class="mobile-menu-item" id="tous">
+      <%= link_to "Tous les commerçants", commerces_path, class: "mobile-menu-item", id: "tous"%>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Produits locaux", locaux_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Artisanat", artisanat_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Gastronomie", gastronomie_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Décoration", decoration_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Beauté", beaute_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Enfance", enfance_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Mode", mode_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Sport", sport_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Loisirs", loisirs_commerces_path, class: "mobile-menu-item" %>
+    </li>
+    <li class="mobile-menu-item">
+      <%= link_to "Papeterie", papeterie_commerces_path, class: "mobile-menu-item" %>
+    </li>
+  </ul>
 </div>
