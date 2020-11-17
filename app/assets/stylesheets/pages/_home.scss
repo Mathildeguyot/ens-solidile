@@ -21,5 +21,34 @@
   }
   img {
     width: 60%;
+    object-fit: cover;
   }
 }
+
+
+/*Smallest device*/
+@media (min-width: 100px) and (max-width: 575px) {
+  #left-banner {
+    width: 420px;
+    padding: 20px;
+  }
+  #home-pic {
+    display: none;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 1200px) {
+  #left-banner {
+    padding: 40px;
+    min-width: 380px;
+  }
+  #home-pic {
+    width: calc(100% - 380px);
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 1200px) {
+}
+

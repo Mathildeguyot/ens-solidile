@@ -37,6 +37,10 @@
   }
 }
 
+.navbar-toggler-icon {
+  font-size: 20px;
+}
+
 
 .navbar-collapse {
   cursor: pointer;
@@ -81,19 +85,18 @@ body {
   padding-top: 70px;
 }
 
+
+#menu {
+  color: $light-pink;
+  font-size: 20px;
+}
+
 // media queries //
 
 //small devices
-@media (max-width: 812px) {
-  .navbar-nav {
-    font-size:11px;
-  }
-  .right {
-        justify-content: flex-start !important;
-  }
-  .navbar-light .navbar-nav .active > .nav-link {
-    color: white;
-    margin: 0px 12px;
+@media (max-width: 1176px) {
+  .general {
+    display: none;
   }
 }
 
