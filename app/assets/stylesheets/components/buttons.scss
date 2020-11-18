@@ -43,3 +43,16 @@
     transition: 0.2s ease-in-out;
   }
 }
+
+
+#instagram-button {
+  font-size: 25px;
+  position: relative;
+  top: 10px;
+  color: $dark-blue;
+  margin-left: 2px;
+  &:hover {
+    color: $orange;
+    transition: 0.2s ease-in-out;
+  }
+}

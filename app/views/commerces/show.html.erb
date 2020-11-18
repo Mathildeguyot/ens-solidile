@@ -50,6 +50,12 @@
         <% if @commerce.mail != nil %>
           <p><i class="fas fa-envelope"></i>  <%= @commerce.mail %></p>
         <% end %>
+        <% if @commerce.facebook != nil  %>
+          <a target="_blank" href=<%= @commerce.facebook %>><i class="fab fa-facebook" id="facebook-button"></i></a>
+        <% end %>
+        <% if @commerce.instagram != nil  %>
+          <a target="_blank" href=<%= @commerce.instagram %>><i class="fab fa-instagram" id="instagram-button"></i></a>
+        <% end %>
       </div>
       <div class="">
         <% if @commerce.website != nil %>
@@ -58,9 +64,7 @@
       </div>
     </div>
 
-    <% if @commerce.facebook != nil  %>
-      <a target="_blank" href=<%= @commerce.facebook %>><i class="fab fa-facebook" id="facebook-button"></i></a>
-    <% end %>
+
 
   </div>
 </div>
