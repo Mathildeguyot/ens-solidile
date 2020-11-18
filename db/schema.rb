@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_16_173851) do
+ActiveRecord::Schema.define(version: 2020_11_18_111728) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2020_11_16_173851) do
     t.datetime "updated_at", precision: 6, null: false
     t.text "support"
     t.string "facebook"
+    t.string "instagram"
     t.index ["owner_id"], name: "index_commerces_on_owner_id"
   end
 
