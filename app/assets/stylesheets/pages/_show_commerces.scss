@@ -27,6 +27,18 @@
       width: 100%;
       height: 360px;
     }
+    #contact {
+      flex-direction: column;
+      align-items: left;
+      #contact-left {
+        text-align: left;
+      }
+      .big {
+        position: relative;
+        top: 26px;
+        left: 112px;
+      }
+    }
   }
   .owner-infos {
     display: none;

@@ -15,6 +15,12 @@
   .shop-grid {
     grid-template-columns: 1fr;
   }
+  .shop-card {
+    width: 380px;
+    img {
+      width: 340px;
+    }
+  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
