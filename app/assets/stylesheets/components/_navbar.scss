@@ -131,6 +131,13 @@ body {
 }
 
 
+@media (min-width: 1176px) {
+  #menu {
+    display: none;
+  }
+}
+
+
 .example {
     display: flex;
     flex-flow: row nowrap;
