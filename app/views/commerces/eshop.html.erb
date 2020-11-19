@@ -1,19 +1,9 @@
-<div class="d-flex align-items-center justify-content-between">
+<div class="d-flex align-items-center">
 
   <h1 style="font-weight: 800">Tous les commerces</h1>
-
-  <div class="forms">
-    <%= form_for "", url: commerces_path, role: "search", method: :get do %>
-      <%= text_field_tag :search, @search_term, placeholder: "Recherche..." %>
-      <%= submit_tag %>
-    <% end %>
-
-
-    <form method='get' url='commerces_path' role='search'>
-      <input type='checkbox' name='eshop' onChange='submit();'>
-      <p id="eshop-filter"><i class="fas fa-sliders-h"></i> avec e-shop</p>
-    </form>
-  </div>
+  <%= link_to eshop_commerces_path do %>
+    <p id="eshop-filter"><i class="fas fa-sliders-h"></i> avec e-shop</p>
+  <% end %>
 
 </div>
 

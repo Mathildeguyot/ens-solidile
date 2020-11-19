@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       get :mode
       get :enfance
       get :gastronomie
+      get :eshop
     end
   end
 

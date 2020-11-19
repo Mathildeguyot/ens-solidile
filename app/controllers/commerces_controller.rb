@@ -1,6 +1,14 @@
 class CommercesController < ApplicationController
   def index
+
     @commerces = Commerce.all
+    if params[:search]
+      @search_term = params[:search]
+      @commerces = @commerces.search_by(@search_term)
+    end
+    if params[:eshop]
+      @commerces = @commerces.where("eshop = true")
+    end
   end
 
   def show
@@ -50,6 +58,10 @@ class CommercesController < ApplicationController
 
   def papeterie
     @commerces = Commerce.where("tag LIKE '%#{'papeterie'}%'")
+  end
+
+  def eshop
+    @commerces = Commerce.where("eshop = true")
   end
 
   def params_commerce
