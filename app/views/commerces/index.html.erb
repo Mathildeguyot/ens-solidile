@@ -3,10 +3,16 @@
   <h1 style="font-weight: 800">Tous les commerces</h1>
 
   <div class="forms">
-    <%= form_for "", url: commerces_path, role: "search", method: :get do %>
-      <%= text_field_tag :search, @search_term, placeholder: "Recherche..." %>
-      <%= submit_tag %>
-    <% end %>
+
+    <form class="simple_form search" method="get" url='commerces_path' role='search'>
+      <!-- <input name="utf8" type="hidden" value="&#x2713;" /> -->
+      <div class="search-form-control form-group d-flex" id="search-bar">
+        <input class="form-control string required" type="text" name="search" id="search_term" placeholder="Recherche..." aria-expanded="false" dir="auto" role="combobox"/>
+        <button name="button" type="submit" class="btn btn-flat">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form>
 
 
     <form method='get' url='commerces_path' role='search'>

@@ -22,6 +22,28 @@
   }
 }
 
+#search-bar {
+  background-color: $light-pink;
+  padding: 9px 10px 9px 20px;
+  border-radius: 27px;
+}
+
+
+#search_term {
+  background-color: $light-pink;
+  border: 1px solid $light-pink;
+}
+
+.search-form-control .form-control:focus {
+  outline: none !important;
+  box-shadow: 0 0px 0px white;
+}
+
+.search-form-control .btn-flat:focus {
+  outline: none !important;
+  box-shadow: 0 0px 0px white;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 850px) and (max-width: 1267px) {
   .shop-grid {
