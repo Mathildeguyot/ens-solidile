@@ -1,20 +1,7 @@
-<h1 style="font-weight: 800">Enfance</h1>
-<div class="centering">
-  <div class="shop-grid">
-    <% @commerces.each do |commerce| %>
-      <div class="shop-card">
-        <p class="name"><%= commerce.name %></p>
-        <div class="tags">
-          <% commerce.tag.split(",").each do |x| %>
-            <p class="tag"><%= x %></p>
-          <% end %>
-        </div>
-        <%= cl_image_tag commerce.photo.key %>
-        <p class="description"><%= commerce.description %></p>
-        <div class="centering">
-          <%= link_to "Voir les détails", commerce_path(commerce), class: "site-button" %>
-        </div>
-      </div>
-    <% end %>
-  </div>
+<div class="d-flex align-items-center justify-content-between">
+
+  <h1 style="font-weight: 800">Enfance</h1>
+
+  <%= render 'shared/index_base' %>
+
 </div>
