@@ -28,9 +28,23 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import {mobileMenu} from '../components/mobile_menu.js';
+// import {checkboxChecked} from '../components/checkbox_checked.js';
+// import {stayChecked} from '../components/stay_checked.js';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   mobileMenu();
+  // checkboxChecked();
+  // stayChecked();
+  $(function(){
+      var test = localStorage.input === 'true'? true: false;
+      $('input').prop('checked', test || false);
+  });
+
+  $('input').on('change', function() {
+      localStorage.input = $(this).is(':checked');
+      console.log($(this).is(':checked'));
+  });
+
 });
