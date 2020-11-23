@@ -17,22 +17,28 @@
 
 
 .left {
-  width: 25%;
+  width: 20%;
   .logo {
   display: flex;
+  align-items: center;
    h1 {
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     font-size: 34px;
-    margin-left: 16px;
     font-family: 'Cabin Sketch';
   }
     img {
-      width: 60px;
-      margin-bottom: 0px;
-      position: relative;
-      top: 5px;
+      height: 34px;
     }
+  p {
+    font-family: 'Cabin Sketch';
+    font-size: 14px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 33px;
+    right: 65px;
+    color: $orange;
+  }
 
   }
 }
