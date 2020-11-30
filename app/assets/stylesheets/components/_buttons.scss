@@ -57,3 +57,17 @@
   }
 }
 
+#form-button {
+  color: $gray;
+  background-color: antiquewhite;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: 'Cabin Sketch';
+  &:hover {
+    text-decoration: none;
+    color: $orange;
+    transition: 0.2s ease-in-out;
+  }
+}
+

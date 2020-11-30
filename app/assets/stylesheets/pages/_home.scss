@@ -30,6 +30,28 @@ body {
 }
 
 
+#inscription {
+  width: 500px;
+  padding: 20px 20px;
+  padding-bottom: 34px;
+  margin-right: 20px;
+  align-items: center;
+  text-align: center;
+  p {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    opacity: 0.4;
+  }
+}
+
+#survey-svg {
+  width: 450px;
+  height: 430px;
+  margin-left: 30px;
+}
+
+
 /*Smallest device*/
 @media (min-width: 100px) and (max-width: 575px) {
   #left-banner {
